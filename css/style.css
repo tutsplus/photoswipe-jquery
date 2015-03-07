@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+body {
+  margin: 0;
+  background-color: #F5F7FA;
+  font-family: "Roboto", sans-serif;
+}
+img {
+  max-width: 100%;
+  border: 5px solid #fff;
+}
+figure {
+  float: left;
+  margin: 0;
+  padding: 10px;
+  width: 33.33333333%;
+}
+figure a {
+  display: block;
+}
+header {
+  background-color: #8CC152;
+}
+header h1,
+header a {
+  padding: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+header h1 {
+  float: left;
+  margin: 0;
+}
+header a {
+  font-weight: 300;
+  text-decoration: none;
+  float: right;
+  background-color: #587f2e;
+}
+.demo-content {
+  width: 840px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*# sourceMappingURL=style.css.map */
