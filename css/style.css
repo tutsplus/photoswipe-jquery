@@ -24,19 +24,26 @@ body {
 }
 img {
   max-width: 100%;
+  height: auto;
   border: 5px solid #fff;
 }
 figure {
-  float: left;
   margin: 0;
   padding: 10px;
-  width: 33.33333333%;
 }
 figure a {
   display: block;
 }
+.three figure {
+  float: left;
+  width: 33.33333333%;
+}
+.two figure {
+  float: left;
+  width: 50%;
+}
 header {
-  background-color: #8CC152;
+  background-color: #196e76;
 }
 header h1,
 header a {
@@ -53,7 +60,7 @@ header a {
   font-weight: 300;
   text-decoration: none;
   float: right;
-  background-color: #587f2e;
+  background-color: #10474c;
 }
 .demo-content {
   width: 840px;
