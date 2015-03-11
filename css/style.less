@@ -32,37 +32,55 @@ figure {
 		display: block;
 	}
 }
-.three figure {
-	float: left;
-	width: (100% / 3);
-}
-.two figure {
-	float: left;
-	width: (100% / 2);
-}
+
 header {
 	@header-bg: #196e76;
 	background-color: @header-bg;
+	text-align: center;
 	h1, a {
 		padding: 15px;
 		color: #fff;
 		text-transform: uppercase;
-		font-size: 12px;
 	}
 	h1 {
-		float: left;
 		margin: 0;
+		font-size: 18px;
 	}
 	a {
 		font-weight: 300;
+		display: block;
 		text-decoration: none;
-		float: right;
 		background-color: darken(@header-bg, 10%);
 	}
 }
 .demo-content {
-	width: 840px;
+	max-width: 920px;
+	width: 100%;
+	padding: 10px;
 	margin-top: 60px;
 	margin-right: auto;
 	margin-left: auto; 
+}
+
+@media screen and (min-width: 630px) {
+	header {
+		text-align: none;
+		h1, a {
+			font-size: 12px;
+		}
+		h1 {
+			float: left;
+		}
+		a {
+			float: right;
+		}
+	}
+	.three figure {
+		float: left;
+		width: (100% / 3);
+	}
+	.two figure {
+		float: left;
+		width: (100% / 2);
+	}
 }

@@ -1,11 +1,12 @@
 (function($) {
     var $pswp = $('.pswp')[0];
-    
+    var image = [];
+
     $('.picture').each( function() {
         var $pic     = $(this),
             getItems = function() {
                 var items = [];
-                $pic.find('.picture-url').each(function() {
+                $pic.find('a').each(function() {
                     var $href   = $(this).attr('href'),
                         $size   = $(this).data('size').split('x'),
                         $width  = $size[0],
@@ -23,6 +24,11 @@
             }
 
         var items = getItems();
+
+        $.each(items, function(index, value) {
+            image[index]     = new Image();
+            image[index].src = value['src'];
+        });
 
         $pic.on('click', 'figure', function(event) {
             event.preventDefault();
