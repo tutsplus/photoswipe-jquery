@@ -1,8 +1,6 @@
 (function($) {
-    var $pswp = $('.pswp')[0];
-    var image = [];
-
     $('.picture').each( function() {
+        // Get the items.
         var $pic     = $(this),
             getItems = function() {
                 var items = [];
@@ -25,11 +23,15 @@
 
         var items = getItems();
 
+        // Preload image.
+        var image = [];
         $.each(items, function(index, value) {
             image[index]     = new Image();
             image[index].src = value['src'];
         });
 
+        // Binding click event.
+        var $pswp = $('.pswp')[0];
         $pic.on('click', 'figure', function(event) {
             event.preventDefault();
             
