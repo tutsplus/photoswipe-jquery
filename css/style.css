@@ -53,6 +53,7 @@ header a {
   display: block;
   text-decoration: none;
   background-color: #10474c;
+  font-size: 14px;
 }
 .demo-content {
   max-width: 920px;
