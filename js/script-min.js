@@ -24,11 +24,10 @@
 
         var items = getItems();
 
-        $pic.on('click', '.picture-url', function(event) {
+        $pic.on('click', 'figure', function(event) {
             event.preventDefault();
             
-            var $index = $(this).data('index');
-
+            var $index = $(this).index();
             var options = {
                 index: $index,
                 bgOpacity: 0.7,
