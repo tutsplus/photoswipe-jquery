@@ -25,7 +25,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  border: 5px solid #fff;
 }
 figure {
   margin: 0;
@@ -61,6 +60,9 @@ header a {
   margin-top: 60px;
   margin-right: auto;
   margin-left: auto;
+}
+.demo-content img {
+  border: 5px solid #fff;
 }
 .picture {
   padding: 36px 0;
