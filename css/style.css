@@ -63,6 +63,7 @@ header a {
 }
 .demo-content img {
   border: 5px solid #fff;
+  vertical-align: top;
 }
 .picture {
   padding: 36px 0;
