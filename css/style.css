@@ -19,7 +19,7 @@ html {
 }
 body {
   margin: 0;
-  background-color: #F5F7FA;
+  background-color: #f5f7fa;
   font-family: "Roboto", sans-serif;
 }
 img {
@@ -56,12 +56,18 @@ header a {
   font-size: 14px;
 }
 .demo-content {
-  max-width: 920px;
+  max-width: 840px;
   width: 100%;
-  padding: 10px;
   margin-top: 60px;
   margin-right: auto;
   margin-left: auto;
+}
+.picture {
+  padding: 36px 0;
+  border-bottom: 1px solid #dae1ec;
+}
+.picture:first-child {
+  padding-top: 0;
 }
 .pace {
   pointer-events: none;
@@ -98,6 +104,13 @@ header a {
   }
   header a {
     float: right;
+  }
+  .demo-content {
+    padding: 10px;
+  }
+  .picture {
+    padding: 0;
+    border-bottom: 0;
   }
   .three figure {
     float: left;
