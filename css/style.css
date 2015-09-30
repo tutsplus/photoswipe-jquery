@@ -72,6 +72,9 @@ header a {
 .picture:first-child {
   padding-top: 0;
 }
+figcaption {
+  display: none;
+}
 .pace {
   pointer-events: none;
   user-select: none;
