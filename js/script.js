@@ -4,16 +4,18 @@
         var $pic     = $(this),
             getItems = function() {
                 var items = [];
-                $pic.find('a').each(function() {
-                    var $href   = $(this).attr('href'),
-                        $size   = $(this).data('size').split('x'),
-                        $width  = $size[0],
-                        $height = $size[1];
+                $pic.find('figure').each(function() {
+                    var $href    = $(this).find('a').attr('href'),
+                        $size    = $(this).find('a').data('size').split('x'),
+                        $width   = $size[0],
+                        $height  = $size[1],
+                        $caption = $(this).find('figcaption').html();
 
                     var item = {
-                        src : $href,
-                        w   : $width,
-                        h   : $height
+                        src   : $href,
+                        w     : $width,
+                        h     : $height,
+                        title : $caption
                     }
 
                     items.push(item);
